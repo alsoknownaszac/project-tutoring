@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/css/client-admin.css">
+    
+</head>
+<body>
+    <div class="wrapper vh-100 w-100">
+        <div class=" fixed-top masterclass-nav justify-content-between">
+            <div class="nav-section-left d-flex" >
+                <a href="#" class="profile">
+                    <div class="profile-img">
+                        <img class="w-100 h-100" src="asset/images/customers-img.png" alt="">
+                    </div>
+                    <div class="profile-name my-auto">
+                        Hello Darlene
+                    </div>
+                </a>
+            </div>
+            
+            <div class="nav-section-right d-flex ">
+                <div class="search-field my-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather align-middle my-auto feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg> 
+                    <input type="text" class="form-control search-form ml-2"  placeholder="Search for courses">    
+                </div>
+                <div class="d-flex my-auto">
+                    <a href="#" class="ml-5 cart-svg"> 
+                        <svg width="" height="" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#195C72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#195C72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#195C72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </a>
+                    <a href="#" class="ml-5 bell-svg"> 
+                        <svg width="" height="" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.6399 27.0013C15.4055 27.4054 15.069 27.7408 14.6642 27.974C14.2594 28.2072 13.8004 28.3299 13.3333 28.3299C12.8661 28.3299 12.4071 28.2072 12.0023 27.974C11.5975 27.7408 11.261 27.4054 11.0266 27.0013M21.3333 9.66797C21.3333 7.54624 20.4904 5.51141 18.9901 4.01111C17.4898 2.51082 15.455 1.66797 13.3333 1.66797C11.2115 1.66797 9.17669 2.51082 7.6764 4.01111C6.17611 5.51141 5.33325 7.54624 5.33325 9.66797C5.33325 19.0013 1.33325 21.668 1.33325 21.668H25.3333C25.3333 21.668 21.3333 19.0013 21.3333 9.66797Z" stroke="#195C72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                        
+                    </a>
+                </div>
+            </div>
+        </div> 
+        
+        <div class=" client-admin_content-wrapper">
+                <!-- START MAIN CONTENT SECTION  -->
+            <div class="client-admin_content" >
+                <div class="main-section-container ">
+                    <div class="main-section mx-4">
+                        <div class="header">
+                            My Courses
+                        </div>
+                        <div class="course-details mb-5 ">
+                            <div class="row mx-0 course-details_titles text-center fw-700">
+                                <div class="">All</div>
+                                <div class="">Recent</div>
+                                <div class="">Completed</div>
+                                <div class="">Older</div>
+                            </div>
+                            <div class="details-section">
+                                <div class="course-wrapper d-flex justify-content-between">
+                                    <div class="w-45 h-100 video-wrapper">
+                                        <img class="w-100 h-100" src="asset/images/video-substitute.png" alt="">
+                                    </div>
+                                    <div class="w-45 details-wrapper">
+                                        <div class="d-flex mb-2 fw-700 justify-content-between">
+                                            <div class="video-title">
+                                                10 Best Places to Visit in Canada
+                                            </div>
+                                            <div class="video-count">
+                                                0/13
+                                            </div>
+                                            <div class="more-btn pt-1">
+                                                <svg class="" width="4" height="14" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 10C2.55228 10 3 9.55228 3 9C3 8.44772 2.55228 8 2 8C1.44772 8 1 8.44772 1 9C1 9.55228 1.44772 10 2 10Z" stroke="#232121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M2 3C2.55228 3 3 2.55228 3 2C3 1.44772 2.55228 1 2 1C1.44772 1 1 1.44772 1 2C1 2.55228 1.44772 3 2 3Z" stroke="#232121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M2 17C2.55228 17 3 16.5523 3 16C3 15.4477 2.55228 15 2 15C1.44772 15 1 15.4477 1 16C1 16.5523 1.44772 17 2 17Z" stroke="#232121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                            
+                                            </div>                  
+                                        </div>
+                                        <div class="w-75 mb-3 video-description">
+                                            Distal revascularization and interval ligation (DRIL),  
+                                        </div>
+                                        <div class="course-tutor mb-2 fw-600">
+                                            By  Cameron Williamson  
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="course-category mt-auto fw-700 btn h-50">
+                                                Music and Art
+                                            </span>
+                                            <div class="ratings fw-600">
+                                                <div class="rating-number text-right mb-0">
+                                                    <svg width="24" height="23" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.1429 1.85547L20.5572 10.7983L30.4286 12.2412L23.2857 19.1983L24.9715 29.0269L16.1429 24.384L7.31432 29.0269L9.00004 19.1983L1.85718 12.2412L11.7286 10.7983L16.1429 1.85547Z" fill="#F0F41E" stroke="#F0F41E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <span class="ml-1">
+                                                        4.8
+                                                    </span>                                
+                                                </div>
+                                                <div class="rating-count">
+                                                    100 ratings
+                                                </div>
+                        
+                                            </div>
+                                        </div>
+                                    </div>            
+                                </div>
+                                <div class="course-wrapper d-flex justify-content-between">
+                                    <div class="w-45 h-100 video-wrapper">
+                                        <img class="w-100 h-100" src="asset/images/video-substitute.png" alt="">
+                                    </div>
+                                    <div class="w-45 details-wrapper">
+                                        <div class="d-flex mb-2 fw-700 justify-content-between">
+                                            <div class="video-title">
+                                                10 Best Places to Visit in Canada
+                                            </div>
+                                            <div class="video-count">
+                                                0/13
+                                            </div>
+                                            <div class="more-btn pt-1">
+                                                <svg class="" width="4" height="14" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 10C2.55228 10 3 9.55228 3 9C3 8.44772 2.55228 8 2 8C1.44772 8 1 8.44772 1 9C1 9.55228 1.44772 10 2 10Z" stroke="#232121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M2 3C2.55228 3 3 2.55228 3 2C3 1.44772 2.55228 1 2 1C1.44772 1 1 1.44772 1 2C1 2.55228 1.44772 3 2 3Z" stroke="#232121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M2 17C2.55228 17 3 16.5523 3 16C3 15.4477 2.55228 15 2 15C1.44772 15 1 15.4477 1 16C1 16.5523 1.44772 17 2 17Z" stroke="#232121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                            
+                                            </div>                  
+                                        </div>
+                                        <div class="w-75 mb-3 video-description">
+                                            Distal revascularization and interval ligation (DRIL),  
+                                        </div>
+                                        <div class="course-tutor mb-2 fw-600">
+                                            By  Cameron Williamson  
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="course-category mt-auto fw-700 btn h-50">
+                                                Music and Art
+                                            </span>
+                                            <div class="ratings fw-600">
+                                                <div class="rating-number text-right mb-0">
+                                                    <svg width="24" height="23" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.1429 1.85547L20.5572 10.7983L30.4286 12.2412L23.2857 19.1983L24.9715 29.0269L16.1429 24.384L7.31432 29.0269L9.00004 19.1983L1.85718 12.2412L11.7286 10.7983L16.1429 1.85547Z" fill="#F0F41E" stroke="#F0F41E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <span class="ml-1">
+                                                        4.8
+                                                    </span>                                
+                                                </div>
+                                                <div class="rating-count">
+                                                    100 ratings
+                                                </div>
+                        
+                                            </div>
+                                        </div>
+                                    </div>            
+                                </div> 
+                                <div class="course-wrapper d-flex justify-content-between">
+                                    <div class="w-45 h-100 video-wrapper">
+                                        <img class="w-100 h-100" src="asset/images/video-substitute.png" alt="">
+                                    </div>
+                                    <div class="w-45 details-wrapper">
+                                        <div class="d-flex mb-2 fw-700 justify-content-between">
+                                            <div class="video-title">
+                                                10 Best Places to Visit in Canada
+                                            </div>
+                                            <div class="video-count">
+                                                0/13
+                                            </div>
+                                            <div class="more-btn pt-1">
+                                                <svg class="" width="4" height="14" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 10C2.55228 10 3 9.55228 3 9C3 8.44772 2.55228 8 2 8C1.44772 8 1 8.44772 1 9C1 9.55228 1.44772 10 2 10Z" stroke="#232121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M2 3C2.55228 3 3 2.55228 3 2C3 1.44772 2.55228 1 2 1C1.44772 1 1 1.44772 1 2C1 2.55228 1.44772 3 2 3Z" stroke="#232121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M2 17C2.55228 17 3 16.5523 3 16C3 15.4477 2.55228 15 2 15C1.44772 15 1 15.4477 1 16C1 16.5523 1.44772 17 2 17Z" stroke="#232121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                            
+                                            </div>                  
+                                        </div>
+                                        <div class="w-75 mb-3 video-description">
+                                            Distal revascularization and interval ligation (DRIL),  
+                                        </div>
+                                        <div class="course-tutor mb-2 fw-600">
+                                            By  Cameron Williamson  
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="course-category mt-auto fw-700 btn h-50">
+                                                Music and Art
+                                            </span>
+                                            <div class="ratings fw-600">
+                                                <div class="rating-number text-right mb-0">
+                                                    <svg width="24" height="23" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16.1429 1.85547L20.5572 10.7983L30.4286 12.2412L23.2857 19.1983L24.9715 29.0269L16.1429 24.384L7.31432 29.0269L9.00004 19.1983L1.85718 12.2412L11.7286 10.7983L16.1429 1.85547Z" fill="#F0F41E" stroke="#F0F41E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <span class="ml-1">
+                                                        4.8
+                                                    </span>                                
+                                                </div>
+                                                <div class="rating-count">
+                                                    100 ratings
+                                                </div>
+                        
+                                            </div>
+                                        </div>
+                                    </div>            
+                                </div> 
+                    
+                            </div>        
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="sub-section-container">
+                    <div class="sub-section  ml-5 mr-4">    
+                        <div class="header mb-4 fw-600">
+                            Related Courses
+                        </div>
+                        <div class="related-courses">
+                            <div class="course-video mb-4">
+                                <img class="w-100 h-100" src="asset/images/video-substitute.png" alt="">
+                            </div>
+                            <div class="title mb-3 fw-600 w-80">
+                                Train Travel in Corona after 8 
+                            </div>
+                            <div class="description mb-4">
+                                Cut from geometric cotton lace mimicking decorative fretwork, 
+                                this blouse reveals hints of skin offsetting its long-sleeve silhouette
+                            </div>
+                            <div class="d-flex more-details justify-content-between">
+                                <div class="course-price">
+                                    $ 200
+                                </div>
+                                <div class="ratings fw-600">
+                                    <div class="rating-number text-right mb-0">
+                                        <svg width="23" height="22" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.1429 1.85547L20.5572 10.7983L30.4286 12.2412L23.2857 19.1983L24.9715 29.0269L16.1429 24.384L7.31432 29.0269L9.00004 19.1983L1.85718 12.2412L11.7286 10.7983L16.1429 1.85547Z" fill="#F0F41E" stroke="#F0F41E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="ml-1">
+                                            4.8
+                                        </span>                                
+                                    </div>
+                                    <div class="rating-count">
+                                        100 ratings
+                                    </div>
+                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="related-courses">
+                            <div class="course-video mb-4">
+                                <img class="w-100 h-100" src="asset/images/video-substitute.png" alt="">
+                            </div>
+                            <div class="title mb-3 fw-600 w-80">
+                                Train Travel in Corona after 8 
+                            </div>
+                            <div class="description mb-4">
+                                Cut from geometric cotton lace mimicking decorative fretwork, 
+                                this blouse reveals hints of skin offsetting its long-sleeve silhouette
+                            </div>
+                            <div class="d-flex more-details justify-content-between">
+                                <div class="course-price">
+                                    $ 200
+                                </div>
+                                <div class="ratings fw-600">
+                                    <div class="rating-number text-right mb-0">
+                                        <svg width="23" height="22" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.1429 1.85547L20.5572 10.7983L30.4286 12.2412L23.2857 19.1983L24.9715 29.0269L16.1429 24.384L7.31432 29.0269L9.00004 19.1983L1.85718 12.2412L11.7286 10.7983L16.1429 1.85547Z" fill="#F0F41E" stroke="#F0F41E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="ml-1">
+                                            4.8
+                                        </span>                                
+                                    </div>
+                                    <div class="rating-count">
+                                        100 ratings
+                                    </div>
+                    
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                
+                  <!-- END MAIN CONTENT SECTION  -->         
+            </div>
+        </div>  
+    </div>     
+   
+
+        <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script> 
+        
+       
+</body>
+
+
+</html>
