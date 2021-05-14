@@ -1,0 +1,718 @@
+/********************
+
+    template 
+                
+*********************/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FBFBFB;
+    font-size: 1.6rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.pointer-none {
+  pointer-events: none;
+}
+
+/********************
+
+    reuseable
+                
+*********************/
+
+.w-5 {
+    width: 5% ;
+  }
+  
+  .w-10 {
+    width: 10% ;
+  }
+  
+  .w-15 {
+    width: 15% ;
+  }
+  
+  .w-16 {
+    width: 16% ;
+  }
+  
+  .w-19 {
+    width: 19% ;
+  }
+  
+  .w-20 {
+    width: 20% ;
+  }
+  
+  .w-23 {
+    width: 23% ;
+  }
+  
+  .w-25 {
+    width: 25% ;
+  }
+  
+  .w-28 {
+    width: 28%;
+  }
+  
+  .w-30 {
+    width: 30% ;
+  }
+  
+  .w-33 {
+    width: 33.3% ;
+  }
+  
+  .w-35 {
+    width: 35% ;
+  }
+  
+  .w-37 {
+    width: 37% ;
+  }
+  
+  .w-40 {
+    width: 40% ;
+  }
+  
+  .w-45 {
+    width: 45% ;
+  }
+  
+  .w-48 {
+    width: 48% ;
+  }
+  
+  .w-60 {
+    width: 60%;
+  }
+  
+  .w-62 {
+    width: 62%;
+  }
+  
+  .w-65 {
+    width: 65%;
+  }
+  
+  .w-68 {
+    width: 68%;
+  }
+  
+  .w-70 {
+    width: 70%;
+  }
+  
+  .w-78 {
+    width: 78%;
+  }
+  
+  .w-79 {
+    width: 79%;
+  }
+    
+  .w-80 {
+    width: 80%;
+  }
+  
+  .w-85 {
+    width: 85%;
+  }
+  
+  .w-90 {
+    width: 90%;
+  }
+  
+  .w-95 {
+    width: 95%;
+  }
+
+
+.vh-100 {
+    height: 100vh;
+}
+
+.vw-100 {
+  width: 100vw;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.lh-1 {
+    line-height: 0.5rem;
+}
+
+.lh-2 {
+    line-height: 1rem;
+}
+
+.lh-3 {
+    line-height: 1.5rem;
+}
+
+.lh-4 {
+    line-height: 2rem;
+}
+
+.br-1 {
+    border-radius: 0.3rem !important;
+}
+
+.br-2 {
+    border-radius: 0.5rem !important;
+}
+
+.br-3 {
+    border-radius: 0.8rem;
+}
+
+.br-4 {
+    border-radius: 1.2rem !important;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.white {
+  color: white;
+}
+
+.bg-white {
+  background: white;
+}
+
+
+/* master class nav */
+
+
+/* .wrapper {
+  
+} */
+
+.masterclass-nav {
+    height: 8rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 1.48rem;
+    padding: 0 2rem;
+    display: flex;
+    z-index: 1;
+    background: #fff;
+}
+
+.nav-section-left,
+.nav-section-right {
+  margin: auto 0;
+}
+
+/* .nav-section-left {
+
+} */
+
+/* .nav-section-right {
+
+} */
+
+.masterclass-nav-logo {
+    width: 18rem ;
+}
+
+.tutor-btn {
+  color: rgba(9, 56, 82, 1) ;
+  font-weight: 700;
+  margin: auto 0;  
+}
+
+.cart-svg {
+  width: 1.5rem;
+}
+
+.login-btn,
+.signup-btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: .03rem;
+  border-radius: 2rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.login-btn {
+  border: 0.1rem solid rgba(9, 56, 82, 1) ;
+}
+
+.signup-btn,
+.signup-btn:hover,
+.signup-btn:active,
+.getstarted-btn,
+.getstarted-btn:hover,
+.getstarted-btn:active,
+.start-tutoring-btn,
+.start-tutoring-btn:hover,
+.start-tutoring-btn:focus {
+  background:  rgba(9, 56, 82, 1) ;
+  color: #fff;
+}
+
+/* masterclass content */
+
+.masterclass-content-wrapper {
+  width: 100% ;
+  margin-top: 8rem;
+  overflow: hidden;
+}
+
+.masterclass-content {
+  width: 100% ;
+  overflow-x: hidden;
+  overflow-y: scroll ;  
+  padding: 0 2rem; 
+  z-index: 0;
+}
+
+/*************************************************************************/
+
+/************
+
+masterclass landing
+
+************/
+
+.hero-img-container {
+  height: 60rem;
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+.hero-img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* search bar */
+
+.search-field {
+  position: absolute;
+  width: 25rem;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%,-50%);
+  border: 0.23rem solid rgba(9, 56, 82, 1) ;
+  border-radius: 2rem;
+  display: flex;
+  padding: 0.3rem 1.5rem;
+}
+
+.search-field svg {
+  stroke: rgba(9, 56, 82, 1) ;
+}
+
+.search-form,
+.search-form:focus {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+
+
+/* hero text */
+
+.hero-text {
+  background: #fff;
+  width: 32rem;
+  position: absolute;
+  top: 77%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.getstarted-btn {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+/* other content */
+
+.masterclass-sub-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  border-bottom: 0.23rem solid rgb(220, 220, 220);
+  margin-bottom: 5rem;
+}
+
+.course {
+  max-width: 24% ;
+}
+
+.course_img-container {
+  height: 35rem ;
+}
+
+.course_img {
+  height: 100%;
+}
+
+.course_title {
+  font-size: 1.8rem;
+  font-weight: 700;  
+  letter-spacing: .03rem;
+  word-spacing: .1rem ;
+}
+
+.course_discount {  
+  font-size: 1.5rem;
+  opacity: 0.6;
+  letter-spacing: .1rem;
+  word-spacing: .25rem ;
+}
+
+.course_tutor {
+  font-size: 1.4rem;;
+  font-weight: 600;
+  color: rgba(57, 161, 193, 1);
+}
+
+/* .course_rating .stars {
+  width: 100%;
+} */
+
+.course_rating .stars label {
+  font-size: 2rem;
+}
+
+.course_rating .stars label:before {
+  content: ★ ;
+}
+
+.course_price {
+  font-size: 2rem;  
+  font-weight: 700; 
+  color : rgba(240, 101, 23, 1);
+}
+
+
+/* become a tutor section */
+
+.sub-section_text {
+  position: relative;
+}
+
+.text_tutoring {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.becomeatutor-section {
+  margin: 0 -2rem;
+  margin-top: 8rem;
+  margin-bottom: 12rem;
+  height: 78rem;
+  width: 110vw;
+  position: relative;
+}
+
+.becomeatutor-section .sub-section {
+  height: 50rem;
+  width: 100%;
+  background: rgba(240, 240, 240, 1);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* become a tutor section */
+
+.sub-section_text .tutoring-header {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.sub-section_text .tutoring-paragraph {
+  /* font-size: 2rem; */
+  margin-bottom: 2rem;
+}
+
+.sub-section_text .start-tutoring-btn {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/************
+
+course details
+
+************/
+
+.course-details-wrapper {
+  margin: 0 -2rem !important;
+}
+
+.course-summary {
+  background: rgba(29, 169, 214, 1);
+  color: #fff;
+  font-weight: 600;
+  height: 55rem;
+  padding: 5rem 7rem;
+  padding-right: 11rem;
+}
+
+.course-summary .course-category {
+  font-size: 1.8rem;
+}
+
+.course-summary .course-title {
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 6.2rem;
+}
+
+.course-summary .course-discount {
+  opacity: 0.8;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.course-summary .course-tutor {
+  font-size: 2.2rem;
+}
+
+.course-summary .course-price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/****/
+
+/* .course-details {
+  
+
+} */
+
+.course-details_titles {
+  justify-content: space-around;
+  text-align: center;
+  font-size: 1.45rem;
+}
+
+.course-details_titles > div {
+  cursor: pointer;
+  color: rgb(155, 155, 155);
+  white-space: nowrap;
+}
+
+.course-details_titles > div:hover,
+.course-details_titles > div:focus {
+  color: rgb(4, 33, 48);
+}
+
+.course-details_sections {
+  background: #fff;
+  border: 0.1rem solid rgba(204, 204, 204, 0.823);
+  padding-left: 2.2rem;
+  padding-right: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.course-details_sections .sections-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.course-details_sections .sections-sub {
+  font-size: 1.5rem;
+}
+
+.course-details_sections .sections-sub ul li {
+  margin-bottom: 1.8rem;
+}
+
+/* course preview */
+.course-preview-wrapper,
+.course-review-wrapper {
+  background: #fff;  
+  margin-bottom: 10rem;
+  padding: 2.5rem 2rem 6rem 2rem ;
+}
+
+.course-preview-wrapper {
+  box-shadow: 0 0 2.5rem rgba(131, 131, 131, 0.5);  
+}
+
+.course-review-wrapper {
+  border: 0.1rem solid rgba(204, 204, 204, 0.823);
+}
+
+.course-preview-wrapper .title,
+.course-review-wrapper .title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.course-preview-wrapper .video {
+  height: 30rem;
+}
+
+
+.course-preview-wrapper .details {
+  margin-bottom: 10rem;
+}
+
+.course-preview-wrapper .details .course-price {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* .course-preview-wrapper .details .rating {
+  
+} */
+
+.course-preview-wrapper .details .course-content .title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.course-preview-wrapper .details .course-content .course-duration,
+.course-preview-wrapper .details .course-content .course-resources,
+.course-preview-wrapper .details .course-content .course-assignments {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.addtocart-btn {
+  font-size: 2rem ;
+  padding: 0.5rem 5rem ;
+  border: 0.1rem solid  rgba(240, 101, 23, 1) ;
+  color: rgba(240, 101, 23, 1) ;
+  margin-bottom: 2rem;
+}
+
+.buynow-btn {
+  font-size: 2rem ;
+  padding: 0.5rem 5rem ;
+  background: rgba(240, 101, 23, 1) ;
+  color: #fff;
+}
+
+.customers-reviews {
+  margin-bottom: 6rem;
+}
+
+.course-review-wrapper .customers-reviews .customers-img {
+  background-color: navy;
+  height: 8rem;
+  width: 8rem;
+  clip-path: circle();
+}
+
+.course-review-wrapper .customers-reviews .customers-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.course-review-wrapper .customers-reviews .customers-rating .rating-number {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.reviews-border-bottom {
+  padding-bottom: 2rem;
+  border-bottom: 0.23rem solid rgb(220, 220, 220);
+}
+
+
+
+/*************************************************************************/
+
+
+/************
+
+footer 
+
+************/
+
+footer {
+  padding: 4rem 2rem;
+  padding-bottom: 6rem;
+  background: rgba(9, 56, 82, 1);
+  color: #fff;
+}
+
+.footer-voremlogo {
+    height: 8rem !important;
+}
+
+.footer-pages-header {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.footer-pages-links {
+  margin-bottom: 2.3rem;
+
+}
+
+.sm-order-3 {
+    order: unset !important;  
+}
+
+.sm-order-2 {
+    order: unset !important;
+}
