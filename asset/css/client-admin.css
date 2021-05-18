@@ -1,4 +1,3 @@
-
 /********************
 
     template 
@@ -33,6 +32,10 @@ body {
 
 .pointer-none {
   pointer-events: none;
+}
+
+.form-control {
+  font-size: 1.6rem !important;
 }
 
 /********************
@@ -365,6 +368,7 @@ a:focus {
   display: flex;
 }
 
+
 /*************************************************************************/
 
 /************
@@ -373,6 +377,10 @@ tutor-client landing
 
 ************/
 
+.border-right {
+  border-right: 0.2rem solid rgb(220, 220, 220);
+}
+
 
 /* main section */
 
@@ -380,9 +388,9 @@ tutor-client landing
   overflow-y: scroll ;
   width: 70%;
   height: 100vh;
-  border-right: 0.2rem solid rgb(220, 220, 220);
   padding: 3rem 0;
   padding-right: 4rem;
+  padding-bottom: 15rem;
 }
 
 .client-admin_content .main-section {
@@ -477,12 +485,11 @@ tutor-client landing
 
 /**** sub section ****/
 
-
-
 .client-admin_content .sub-section-container {
   overflow: hidden ;
   width: 30%;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem;  
+  padding-bottom: 15rem;
 
   height: 100vh;
   overflow-y: scroll ;
@@ -499,7 +506,7 @@ tutor-client landing
 }
 
 .sub-section .related-courses .course-video {
-  height: 30rem;
+  height: 40rem;
 }
 
 .sub-section .related-courses .course-video img {
@@ -521,4 +528,925 @@ tutor-client landing
   font-size: 1.55rem;
 }
 
- 
+
+/***************** 
+
+      my courses 
+
+ ******************/
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.mycourses-wrapper .course-title {
+  font-size: 2.3rem;
+}
+
+.mycourses-wrapper .course-video {
+  height: 40rem ;
+  border-radius: 2rem;
+}
+
+.mycourses-wrapper .course-section-title {
+  font-size: 1.8rem;
+}
+
+.mycourses-wrapper .more-details .course-details_titles {
+  font-size: 1.5rem;
+  border : none ;
+  margin-bottom: 1rem ;
+}
+
+.mycourses-wrapper .more-details .details-content {
+  font-size: 1.5rem;
+
+}
+
+.mycourses-wrapper .more-details .details-content .lessons ul li {
+  margin-bottom: 2.5rem ;
+}
+
+/* reviews */
+
+.customers-reviews {
+  margin-bottom: 6rem;
+}
+
+.customers-reviews .customers-img {
+  background-color: navy;
+  height: 8rem;
+  width: 8rem;
+  clip-path: circle();
+}
+
+ .customers-reviews .customers-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+ .customers-reviews .customers-rating .rating-number {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.reviews-border-bottom {
+  padding-bottom: 2rem;
+  border-bottom: 0.23rem solid rgb(220, 220, 220);
+}
+
+/* drop a review  */
+
+.drop-a-review-container .drop-a-review {
+  font-size: 2rem;
+}
+
+.drop-a-review-container .review-star-wrapper {
+  border:  0.23rem solid rgb(220, 220, 220) ;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2.5rem rgba(131, 131, 131, 0.5);  
+}
+
+.stars-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.stars {
+  clip-path: polygon(50% 0%, 62% 30%, 98% 35%, 76% 59%, 79% 91%, 50% 70%, 21% 91%, 23% 62%, 2% 35%, 38% 31%);
+  height: 3.5rem;
+  width: 3.5rem;
+  border:  0.23rem solid rgb(220, 220, 220) ;
+  background-color: gold;
+}
+
+
+.review-comments .submit-comment {
+  background: rgba(9, 56, 82, 1);
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  margin-left: auto;
+}
+
+/* course playlist */
+
+.course-playlist {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  box-shadow: 0 0 1.5rem rgba(131, 131, 131, 0.5);  
+}
+
+.course-playlist .header{
+  background: rgba(242, 242, 242, 1);
+  font-size: 1.8rem; 
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: .8rem;
+}
+
+.course-chapter-list .course-chapter {  
+  padding: 1rem ;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .8rem;
+  cursor: pointer;
+}
+
+.course-chapter-list .course-chapter:hover,
+.course-chapter-list .course-chapter::after {
+  background: rgba(242, 153, 74, 1);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  /* font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .6rem; */
+}
+
+
+.course-chapter-list .course-chapter .play-option,
+.course-chapter-list .course-chapter .duration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-chapter-list .course-chapter .chapter-title {  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.course-chapter-list .course-chapter .duration {
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center ;
+}
+
+
+/* resources */
+
+.resources-container .header {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem ;
+}
+
+
+.resources-list .resources .resources-title {
+  font-size: 1.4rem;
+}
+
+
+/* sub section review */
+
+.sub-section .drop-a-review-container .drop-a-review {
+  font-size: 1.6rem;
+}
+
+.sub-section .stars {
+  clip-path: polygon(50% 0%, 62% 30%, 98% 35%, 76% 59%, 79% 91%, 50% 70%, 21% 91%, 23% 62%, 2% 35%, 38% 31%);
+  height: 2.5rem;
+  width: 2.5rem;
+  border:  0.23rem solid rgb(220, 220, 220) ;
+  background-color: gold;
+}
+
+
+/********************
+
+    template 
+                
+*********************/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FBFBFB;
+    font-size: 1.6rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.pointer-none {
+  pointer-events: none;
+}
+
+.form-control {
+  font-size: 1.6rem !important;
+}
+
+/********************
+
+    reuseable
+                
+*********************/
+
+.w-5 {
+    width: 5% ;
+  }
+  
+  .w-10 {
+    width: 10% ;
+  }
+  
+  .w-15 {
+    width: 15% ;
+  }
+  
+  .w-16 {
+    width: 16% ;
+  }
+  
+  .w-19 {
+    width: 19% ;
+  }
+  
+  .w-20 {
+    width: 20% ;
+  }
+  
+  .w-23 {
+    width: 23% ;
+  }
+  
+  .w-25 {
+    width: 25% ;
+  }
+  
+  .w-28 {
+    width: 28%;
+  }
+  
+  .w-30 {
+    width: 30% ;
+  }
+  
+  .w-33 {
+    width: 33.3% ;
+  }
+  
+  .w-35 {
+    width: 35% ;
+  }
+  
+  .w-37 {
+    width: 37% ;
+  }
+  
+  .w-40 {
+    width: 40% ;
+  }
+  
+  .w-45 {
+    width: 45% ;
+  }
+  
+  .w-48 {
+    width: 48% ;
+  }
+  
+  .w-60 {
+    width: 60%;
+  }
+  
+  .w-62 {
+    width: 62%;
+  }
+  
+  .w-65 {
+    width: 65%;
+  }
+  
+  .w-68 {
+    width: 68%;
+  }
+  
+  .w-70 {
+    width: 70%;
+  }
+  
+  .w-78 {
+    width: 78%;
+  }
+  
+  .w-79 {
+    width: 79%;
+  }
+    
+  .w-80 {
+    width: 80%;
+  }
+  
+  .w-85 {
+    width: 85%;
+  }
+  
+  .w-90 {
+    width: 90%;
+  }
+  
+  .w-95 {
+    width: 95%;
+  }
+
+
+.vh-100 {
+    height: 100vh;
+}
+
+.vw-100 {
+  width: 100vw;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.lh-1 {
+    line-height: 0.5rem;
+}
+
+.lh-2 {
+    line-height: 1rem;
+}
+
+.lh-3 {
+    line-height: 1.5rem;
+}
+
+.lh-4 {
+    line-height: 2rem;
+}
+
+.br-1 {
+    border-radius: 0.3rem !important;
+}
+
+.br-2 {
+    border-radius: 0.5rem !important;
+}
+
+.br-3 {
+    border-radius: 0.8rem;
+}
+
+.br-4 {
+    border-radius: 1.2rem !important;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.white {
+  color: white;
+}
+
+.bg-white {
+  background: white;
+}
+
+
+/* master class nav */
+
+
+/* .wrapper {
+  
+} */
+
+.masterclass-nav {
+    height: 8rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 1.48rem;
+    padding: 0 5rem;
+    display: flex;
+    z-index: 1;
+    background: #fff;
+    border-bottom: 0.15rem solid rgb(220, 220, 220);
+}
+
+.nav-section-left,
+.nav-section-right {
+  margin: auto 0;
+}
+
+.nav-section-left .profile {
+    display: flex;
+}
+
+.nav-section-left .profile .profile-img {
+    width: 4.3rem ;
+    height: 4.3rem ;
+    clip-path: circle();
+}
+
+.nav-section-left .profile .profile-name {
+    margin-left: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+/* .nav-section-right {
+
+} */
+
+
+/* search bar */
+
+.search-field {
+    /* position: absolute; */
+    width: 30rem;
+    /* top: 50%; */
+    /* left: 35%; */
+    /* transform: translate(-50%,-50%); */
+    border: 0.15rem solid rgba(9, 56, 82, 1) ;
+    border-radius: 2rem;
+    display: flex;
+    padding: 0.5rem 1.8rem;
+  }
+  
+  .search-field svg {
+    stroke: rgba(9, 56, 82, 1) ;
+  }
+  
+  .search-form,
+  .search-form:focus {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  
+
+.cart-svg,
+.bell-svg {
+  display: flex ;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 .8rem rgba(131, 131, 131, 0.5);
+  z-index: 1;
+}
+
+.cart-svg svg,
+.bell-svg svg {
+    width: 60%;
+    height: 60%;
+    display: block;
+    margin: auto;
+    z-index: 2;
+}
+
+
+.login-btn,
+.signup-btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: .03rem;
+  border-radius: 2rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.login-btn {
+  border: 0.1rem solid rgba(9, 56, 82, 1) ;
+}
+
+.signup-btn,
+.signup-btn:hover,
+.signup-btn:active,
+.getstarted-btn,
+.getstarted-btn:hover,
+.getstarted-btn:active,
+.start-tutoring-btn,
+.start-tutoring-btn:hover,
+.start-tutoring-btn:focus {
+  background:  rgba(9, 56, 82, 1) ;
+  color: #fff;
+}
+
+/* masterclass content */
+
+.client-admin_content-wrapper {
+  width: 100% ;
+  position: fixed;
+  top: 8rem;  
+  height: 100vh;
+}
+
+.client-admin_content {
+  width: 100% ;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0 3.5rem; 
+  z-index: 0;
+  display: flex;
+}
+
+
+/*************************************************************************/
+
+/************
+
+tutor-client landing
+
+************/
+
+.border-right {
+  border-right: 0.2rem solid rgb(220, 220, 220);
+}
+
+
+/* main section */
+
+.client-admin_content .main-section-container {
+  overflow-y: scroll ;
+  width: 70%;
+  height: 100vh;
+  padding: 3rem 0;
+  padding-right: 4rem;
+  padding-bottom: 15rem;
+}
+
+.client-admin_content .main-section {
+  /* overflow-y: scroll; */
+  scroll-behavior: smooth;
+  transition: 0.4s;
+}
+
+.client-admin_content .main-section .header {    
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+
+.course-details_titles {
+    width: 50%;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.15rem solid rgb(220, 220, 220);
+    margin-bottom: 2.5rem; 
+}
+  
+.course-details_titles > div {
+    cursor: pointer;
+    color: rgb(155, 155, 155);
+    white-space: nowrap;
+}
+  
+.course-details_titles > div:hover,
+.course-details_titles > div:focus {
+    color: rgb(4, 33, 48);
+}
+
+.course-details .course-wrapper {
+    background: #fff;
+    height: 24rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 2rem rgba(131, 131, 131, 0.3);
+    padding: 2rem 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.course-details .course-wrapper .video-wrapper img {
+  border-radius: 0.8rem;
+}
+
+.course-wrapper .details-wrapper .video-title,
+.course-wrapper .details-wrapper .video-count {
+  font-size: 1.8rem;
+}
+
+.course-wrapper .details-wrapper .video-title {
+  width: 75%;
+}
+
+.course-wrapper .details-wrapper .video-count {
+  width: 15%;
+  text-align: center;
+}
+
+.course-wrapper .details-wrapper .more-btn {
+  width: 10%;
+  text-align: right;
+}
+
+/* .course-wrapper .details-wrapper .video-description {
+  word-wrap: ;
+} */
+
+
+.course-wrapper .details-wrapper .course-tutor {
+  color: rgba(57, 161, 193, 1);
+}
+
+.course-wrapper .details-wrapper .course-category {
+  background: rgba(57, 161, 193, 1);
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.course-wrapper .details-wrapper .ratings {
+  font-size: 1.65rem;
+}
+
+
+
+/**** sub section ****/
+
+.client-admin_content .sub-section-container {
+  overflow: hidden ;
+  width: 30%;
+  padding: 2rem 1rem;  
+  padding-bottom: 15rem;
+
+  height: 100vh;
+  overflow-y: scroll ;
+}
+
+.client-admin_content .sub-section {
+    /* overflow-y: scroll; */
+    scroll-behavior: smooth;
+    transition: 0.4s;
+  }
+
+.sub-section .related-courses {
+  margin-bottom: 10rem;
+}
+
+.sub-section .related-courses .course-video {
+  height: 40rem;
+}
+
+.sub-section .related-courses .course-video img {
+  border-radius: 1rem;
+}
+
+.sub-section .related-courses .title {
+  font-size: 2rem;
+}
+
+.more-details .course-price {
+  color: rgba(240, 101, 23, 1);
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+.more-details .ratings {
+  font-size: 1.55rem;
+}
+
+
+/***************** 
+
+      my courses 
+
+ ******************/
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.mycourses-wrapper .course-title {
+  font-size: 2.3rem;
+}
+
+.mycourses-wrapper .course-video {
+  height: 40rem ;
+  border-radius: 2rem;
+}
+
+.mycourses-wrapper .course-section-title {
+  font-size: 1.8rem;
+}
+
+.mycourses-wrapper .more-details .course-details_titles {
+  font-size: 1.5rem;
+  border : none ;
+  margin-bottom: 1rem ;
+}
+
+.mycourses-wrapper .more-details .details-content {
+  font-size: 1.5rem;
+
+}
+
+.mycourses-wrapper .more-details .details-content .lessons ul li {
+  margin-bottom: 2.5rem ;
+}
+
+/* reviews */
+
+.customers-reviews {
+  margin-bottom: 6rem;
+}
+
+.customers-reviews .customers-img {
+  background-color: navy;
+  height: 8rem;
+  width: 8rem;
+  clip-path: circle();
+}
+
+ .customers-reviews .customers-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+ .customers-reviews .customers-rating .rating-number {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.reviews-border-bottom {
+  padding-bottom: 2rem;
+  border-bottom: 0.23rem solid rgb(220, 220, 220);
+}
+
+/* drop a review  */
+
+.drop-a-review-container .drop-a-review {
+  font-size: 2rem;
+}
+
+.drop-a-review-container .review-star-wrapper {
+  border:  0.23rem solid rgb(220, 220, 220) ;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2.5rem rgba(131, 131, 131, 0.5);  
+}
+
+.stars-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.stars {
+  clip-path: polygon(50% 0%, 62% 30%, 98% 35%, 76% 59%, 79% 91%, 50% 70%, 21% 91%, 23% 62%, 2% 35%, 38% 31%);
+  height: 3.5rem;
+  width: 3.5rem;
+  border:  0.23rem solid rgb(220, 220, 220) ;
+  background-color: gold;
+}
+
+
+.review-comments .submit-comment {
+  background: rgba(9, 56, 82, 1);
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  margin-left: auto;
+}
+
+/* course playlist */
+
+.course-playlist {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  box-shadow: 0 0 1.5rem rgba(131, 131, 131, 0.5);  
+}
+
+.course-playlist .header{
+  background: rgba(242, 242, 242, 1);
+  font-size: 1.8rem; 
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: .8rem;
+}
+
+.course-chapter-list .course-chapter {  
+  padding: 1rem ;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .8rem;
+  cursor: pointer;
+}
+
+.course-chapter-list .course-chapter:hover,
+.course-chapter-list .course-chapter::after {
+  background: rgba(242, 153, 74, 1);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  /* font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .6rem; */
+}
+
+
+.course-chapter-list .course-chapter .play-option,
+.course-chapter-list .course-chapter .duration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-chapter-list .course-chapter .chapter-title {  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.course-chapter-list .course-chapter .duration {
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center ;
+}
+
+
+/* resources */
+
+.resources-container .header {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem ;
+}
+
+
+.resources-list .resources .resources-title {
+  font-size: 1.4rem;
+}
+
+
+/* sub section review */
+
+.sub-section .drop-a-review-container .drop-a-review {
+  font-size: 1.6rem;
+}
+
+.sub-section .stars {
+  clip-path: polygon(50% 0%, 62% 30%, 98% 35%, 76% 59%, 79% 91%, 50% 70%, 21% 91%, 23% 62%, 2% 35%, 38% 31%);
+  height: 2.5rem;
+  width: 2.5rem;
+  border:  0.23rem solid rgb(220, 220, 220) ;
+  background-color: gold;
+}
+
+
