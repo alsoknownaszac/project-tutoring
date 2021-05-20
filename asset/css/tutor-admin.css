@@ -435,7 +435,8 @@ tutor-client landing
 
 /* main section */
 
-.tutor-admin_content .main-section-container {
+.tutor-admin_content .main-section-container,
+.tutor-admin_content .sub-section-container  {
   overflow-y: scroll ;
   /* width: 70%; */
   height: 100vh;
@@ -444,7 +445,8 @@ tutor-client landing
   padding-bottom: 15rem;
 }
 
-.tutor-admin_content .main-section {
+.tutor-admin_content .main-section,
+.tutor-admin_content .sub-section {
   /* overflow-y: scroll; */
   scroll-behavior: smooth;
   transition: 0.4s;
@@ -647,5 +649,200 @@ tutor-client landing
 .publish-course-btn,
 .module-upload-btn {
   margin-top: 4rem ;
+}
+
+
+
+/***********************************
+
+    dashboard
+
+
+    ****************************/
+
+
+  
+.dashboard-profile {
+  display: flex;
+  background: rgb(244, 244, 244);
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.dashboard-profile .profile-img {
+  height: 12rem;
+  width: 12rem;
+  clip-path: circle();
+}
+
+
+.dashboard-profile .info .profile-name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.dashboard-profile .info .category {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgba(240, 101, 23, 1);
+}
+
+/* drop a review  */
+
+.stars-container{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.stars {
+  clip-path: polygon(50% 0%, 62% 30%, 98% 35%, 76% 59%, 79% 91%, 50% 70%, 21% 91%, 23% 62%, 2% 35%, 38% 31%);
+  height: 3rem;
+  width: 3rem;
+  border:  0.23rem solid rgb(220, 220, 220) ;
+  background-color: gold;
+}
+
+
+/* activites */
+
+
+.dashboard-activities {
+  background: rgb(237, 237, 237);
+  padding: 2rem 2.5rem;
+}
+
+.activities-header {
+  font-size: 2rem;
+}
+
+.activities-uploads,
+.activities-views,
+.activities-students {
+  background: #fff;
+  border: .1rem solid  rgb(220, 220, 220);
+  padding: 2rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.5rem ;
+}
+
+.activities-uploads .stats .numbers,
+.activities-views .stats .numbers,
+.activities-students .stats .numbers {
+  font-size: 3.3rem;
+  letter-spacing: .2rem;
+}
+
+
+/* earnings */
+
+.dashboard-earnings {
+  background: rgb(244, 244, 244);
+  padding: 2.5rem 3rem;
+}
+
+.dashboard-earnings .earnings-report {
+  background: rgb(237, 237, 237);
+  padding: 2rem 3rem;
+}
+
+.chart-report-container .chart-head-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart-head-container .text-container .earnings-report-text {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.chart-head-container .text-container .students-text {
+  font-size: 1.35rem;
+  font-weight: 600;
+  display: flex;
+}
+
+.duration-dropdown .btn-group {
+  padding: .5rem 1rem ;
+  border: .15rem solid  rgb(191, 191, 191) !important;
+  border-radius: .5rem;
+  font-size: 1.4rem;
+}
+
+.duration-dropdown .btn-group .dropdown-menu{
+  font-size: 1.4rem;
+  transform: translate(1rem , 3.3rem) !important;
+}
+
+.chart-report-container .chart-report .chart {
+  height: 30rem ;
+  background: #fff;
+  padding: 2rem;
+}
+
+.chart-report-container .chart-report .chart svg{
+  width: 100%;
+  height: 100%;
+}
+
+.duration-earnings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.duration-earnings .daily-earnings,
+.duration-earnings .weekly-earnings,
+.duration-earnings .monthly-earnings {
+  padding: 1.5rem  2rem ;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 1rem;  
+}
+
+.duration-earnings .daily-earnings .numbers,
+.duration-earnings .weekly-earnings .numbers,
+.duration-earnings .monthly-earnings .numbers {
+  font-size: 3.5rem;
+  font-weight: 600;  
+}
+
+.duration-earnings .daily-earnings .fiat,
+.duration-earnings .weekly-earnings .fiat,
+.duration-earnings .monthly-earnings .fiat {
+  font-size: 2rem;  
+}
+
+.duration-earnings .daily-earnings {
+  background: rgba(214, 231, 250, 1);
+}
+
+.duration-earnings .weekly-earnings {
+  background: rgba(253, 198, 168, 1);
+}
+
+.duration-earnings .monthly-earnings {
+  background: rgba(243, 166, 166, 1);
+}
+
+.dashboard-earnings .available-earnings {
+  background: rgba(214, 231, 250, 1);
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+
+.available-earnings .numbers {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.earnings-widthdraw-btn,
+.earnings-widthdraw-btn:hover,
+.earnings-widthdraw-btn:focus {
+  background: rgba(9, 56, 82, 1);
+  color: #fff;
+  font-size: 1.5rem;
 }
 
