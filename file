@@ -1,0 +1,12 @@
+Layout.NoSideContent = (props) => (
+  <div className={props.containerStyle}>{props.children}</div>
+);
+Layout.Content = (props) => (
+  <div className={`main-content-container px-[1.5rem] ${props.containerStyle}`}>
+    <NavBar />
+    <div className="main-content content-ls w-[100%] md:max-w-[calc(100%_-_6.944444444444444%)] md:grow-0 md:basis-[calc(100%_-_6.944444444444444%)]">
+      <SideNav /> {props.children}
+    </div>
+  </div>
+);
+
